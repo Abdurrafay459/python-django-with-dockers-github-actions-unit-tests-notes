@@ -1,0 +1,22 @@
+Django Test Framework:
+  based on unittest lib
+  Django based features:
+    Test CLient - dummy web browser
+    Simulate auth - no need to login everytime
+    Temp database for testing
+  Django REST framework adds features:
+    API test client
+
+
+Where do we put tests?
+  Placeholders tests.py added to each app
+  or create tests/ directory to split up tests
+  Keep in mind:
+    Only use tests.py or tests/ directory (not both)
+    Test modules must starts with test_ (test_module1)
+    Test dir must contain __int__() - allows django to run tests
+
+
+Test Database:
+  we cannot have seperate database to test our code each time so django provides test database
+  clears after every run
