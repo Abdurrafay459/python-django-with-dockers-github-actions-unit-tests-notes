@@ -36,3 +36,6 @@ create test driven development:
   create sample file eg calc.py
   create test.py and write code to test methods from calc.py
   run docker compose run --rm app sh -c "python manage.py test"
+
+create super user:
+  docker compose run --rm app sh -c "python manage.py createsuperuser"
