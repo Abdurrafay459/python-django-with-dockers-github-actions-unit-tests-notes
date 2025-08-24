@@ -39,3 +39,8 @@ create test driven development:
 
 create super user:
   docker compose run --rm app sh -c "python manage.py createsuperuser"
+
+Swagger:
+  add drf_spectacular>=0.15.1,<0.16 in requiremensts.txt
+  add 'rest_framework' and 'drf_spectacular' in installed apps insettings
+  add REST_FRAMEWORK = {'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema'} in settings
